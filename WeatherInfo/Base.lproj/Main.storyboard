@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Settings View Controller-->
         <scene sceneID="wu0-a8-dlq">
             <objects>
-                <viewController id="PUU-db-REJ" customClass="SettingsViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PUU-db-REJ" customClass="SettingsViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="01w-Ch-840"/>
                         <viewControllerLayoutGuide type="bottom" id="hZv-bN-cw1"/>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsCell" id="emW-of-ff4" customClass="SettingsTableViewCell" customModule="Cloudy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsCell" id="emW-of-ff4" customClass="SettingsTableViewCell" customModule="WeatherInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emW-of-ff4" id="8BW-e7-TtL">
@@ -83,7 +83,7 @@
         <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -131,7 +131,7 @@
         <!--Day View Controller-->
         <scene sceneID="sS9-Pp-vhd">
             <objects>
-                <viewController id="AzE-7x-bFo" customClass="DayViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AzE-7x-bFo" customClass="DayViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nP6-LM-LNV"/>
                         <viewControllerLayoutGuide type="bottom" id="ICJ-Ui-hIU"/>
@@ -281,7 +281,7 @@
         <!--Week View Controller-->
         <scene sceneID="Cxg-2W-oMH">
             <objects>
-                <viewController id="kFf-S5-7AW" customClass="WeekViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kFf-S5-7AW" customClass="WeekViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hpn-tU-juB"/>
                         <viewControllerLayoutGuide type="bottom" id="vMf-ro-l5e"/>
@@ -306,7 +306,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherDayCell" rowHeight="103" id="qOr-qh-iGB" customClass="WeatherDayTableViewCell" customModule="Cloudy" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherDayCell" rowHeight="103" id="qOr-qh-iGB" customClass="WeatherDayTableViewCell" customModule="WeatherInfo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="103"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qOr-qh-iGB" id="LhY-0E-8Uj">
@@ -413,7 +413,7 @@
         <!--Locations View Controller-->
         <scene sceneID="e4B-cQ-yxQ">
             <objects>
-                <viewController id="1Lb-Fd-hMM" customClass="LocationsViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Lb-Fd-hMM" customClass="LocationsViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1ab-BI-0yt"/>
                         <viewControllerLayoutGuide type="bottom" id="M35-ve-uqu"/>
@@ -426,7 +426,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" id="Pgv-3I-0ez" customClass="LocationTableViewCell" customModule="Cloudy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" id="Pgv-3I-0ez" customClass="LocationTableViewCell" customModule="WeatherInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pgv-3I-0ez" id="PfP-OL-ReA">
@@ -489,7 +489,7 @@
         <!--Add Location View Controller-->
         <scene sceneID="3iL-QJ-eWR">
             <objects>
-                <viewController id="1SC-03-Wyq" customClass="AddLocationViewController" customModule="Cloudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1SC-03-Wyq" customClass="AddLocationViewController" customModule="WeatherInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lTQ-1h-mno"/>
                         <viewControllerLayoutGuide type="bottom" id="UXA-Nw-IDn"/>
@@ -510,7 +510,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" id="3n7-tm-inI" customClass="LocationTableViewCell" customModule="Cloudy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" id="3n7-tm-inI" customClass="LocationTableViewCell" customModule="WeatherInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3n7-tm-inI" id="wsB-3S-IgS">
@@ -540,13 +540,18 @@
                                     <outlet property="delegate" destination="1SC-03-Wyq" id="p5h-ju-EYh"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="scm-ik-yRp">
+                                <rect key="frame" x="178" y="324" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="top" secondItem="3Mb-Ss-OAB" secondAttribute="top" id="Fog-z0-vv1"/>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="leading" secondItem="3Mb-Ss-OAB" secondAttribute="leading" id="KtM-He-7Xm"/>
                             <constraint firstItem="UXA-Nw-IDn" firstAttribute="top" secondItem="kC8-yI-yKo" secondAttribute="bottom" id="TX2-mX-WjC"/>
+                            <constraint firstItem="scm-ik-yRp" firstAttribute="centerY" secondItem="3Mb-Ss-OAB" secondAttribute="centerY" id="aQj-lL-sHF"/>
                             <constraint firstAttribute="trailing" secondItem="kC8-yI-yKo" secondAttribute="trailing" id="t4j-NW-1vE"/>
+                            <constraint firstItem="scm-ik-yRp" firstAttribute="centerX" secondItem="3Mb-Ss-OAB" secondAttribute="centerX" id="ySv-UA-bkh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T8v-SB-W94">
@@ -557,6 +562,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="scm-ik-yRp" id="OPe-ge-Yq0"/>
                         <outlet property="searchBar" destination="K22-9s-gOl" id="lND-vd-kdm"/>
                         <outlet property="tableView" destination="kC8-yI-yKo" id="JTj-z6-wjs"/>
                     </connections>
@@ -572,7 +578,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSF-DT-ege" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ffq-if-nQ5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -590,7 +596,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EvA-HG-6fN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rmw-rO-2mw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -61,6 +61,10 @@
 		CF4A79B62116B20800517FDD /* SettingsTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79B52116B20800517FDD /* SettingsTimeViewModelTests.swift */; };
 		CF4A79B92116B6B000517FDD /* SettingsUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79B82116B6B000517FDD /* SettingsUnitsViewModelTests.swift */; };
 		CF4A79BB2116B8A300517FDD /* SettingsTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BA2116B8A300517FDD /* SettingsTemperatureViewModelTests.swift */; };
+		CF4A79BE2118D9B100517FDD /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BD2118D9B100517FDD /* AddLocationViewModel.swift */; };
+		CF4A79C02118F32F00517FDD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */; };
+		CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C12118F56D00517FDD /* LocationService.swift */; };
+		CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C42118F66400517FDD /* GeocoderService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,10 @@
 		CF4A79B52116B20800517FDD /* SettingsTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTimeViewModelTests.swift; sourceTree = "<group>"; };
 		CF4A79B82116B6B000517FDD /* SettingsUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUnitsViewModelTests.swift; sourceTree = "<group>"; };
 		CF4A79BA2116B8A300517FDD /* SettingsTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTemperatureViewModelTests.swift; sourceTree = "<group>"; };
+		CF4A79BD2118D9B100517FDD /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
+		CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CF4A79C12118F56D00517FDD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CF4A79C42118F66400517FDD /* GeocoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderService.swift; sourceTree = "<group>"; };
 		CF936ECF2114BA0800ABD53F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		CF936ED02114BA0800ABD53F /* PMKCoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKCoreLocation.framework; path = Carthage/Build/iOS/PMKCoreLocation.framework; sourceTree = SOURCE_ROOT; };
 		CF936ED12114BA0800ABD53F /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = SOURCE_ROOT; };
@@ -213,6 +221,7 @@
 		BBD3252820E76CDD0013208F /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CF4A79C32118F63700517FDD /* Services */,
 				CF4A79332114D00300517FDD /* ViewControllers */,
 				CF4A792E2114C8B200517FDD /* Configuration */,
 				CF4A792D2114C8A700517FDD /* Storyboards */,
@@ -296,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				CF4A798221150DC600517FDD /* JSONDecodable.swift */,
+				CF4A79C12118F56D00517FDD /* LocationService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -314,6 +324,7 @@
 				CF4A799B2115E5A600517FDD /* Double+Extension.swift */,
 				CF4A793D2114D1AD00517FDD /* UserDefaults+Extension.swift */,
 				CF4A79412114D34A00517FDD /* UIImage+Extension.swift */,
+				CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -396,6 +407,7 @@
 		CF4A798B21150E9100517FDD /* Add Location View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF4A79BC2118D99100517FDD /* View Models */,
 				CF4A798C21150E9100517FDD /* AddLocationViewController.swift */,
 			);
 			path = "Add Location View Controller";
@@ -502,6 +514,22 @@
 				CF4A79BA2116B8A300517FDD /* SettingsTemperatureViewModelTests.swift */,
 			);
 			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		CF4A79BC2118D99100517FDD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A79BD2118D9B100517FDD /* AddLocationViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CF4A79C32118F63700517FDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A79C42118F66400517FDD /* GeocoderService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CF936ECE2114B9E100ABD53F /* Frameworks */ = {
@@ -673,6 +701,8 @@
 				CF4A793A2114D04B00517FDD /* WeekViewController.swift in Sources */,
 				CF4A799621150E9100517FDD /* SettingsTableViewCell.swift in Sources */,
 				CF4A79812114F80000517FDD /* RootViewController.swift in Sources */,
+				CF4A79C02118F32F00517FDD /* UIColor+Extension.swift in Sources */,
+				CF4A79BE2118D9B100517FDD /* AddLocationViewModel.swift in Sources */,
 				CF4A79072114BC0E00517FDD /* NetworkManager.swift in Sources */,
 				CF4A79AD2116805100517FDD /* WeatherDayViewModel.swift in Sources */,
 				CF4A79392114D04B00517FDD /* WeatherViewController.swift in Sources */,
@@ -689,6 +719,7 @@
 				CF4A79422114D34A00517FDD /* UIImage+Extension.swift in Sources */,
 				CF4A79A82115FDCE00517FDD /* SettingsTemperatureViewModel.swift in Sources */,
 				CF4A799A2115E57800517FDD /* WeatherDayTableViewCell.swift in Sources */,
+				CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */,
 				CF4A79B0211685A300517FDD /* WeatherDayRepresentable.swift in Sources */,
 				CF4A793E2114D1AE00517FDD /* UserDefaults+Extension.swift in Sources */,
 				CF4A79A42115F88D00517FDD /* SettingsTimeViewModel.swift in Sources */,
@@ -700,6 +731,7 @@
 				CF4A799121150E9100517FDD /* LocationsViewLocationViewModel.swift in Sources */,
 				CF4A799321150E9100517FDD /* LocationRepresentable.swift in Sources */,
 				CF4A79382114D04B00517FDD /* DayViewController.swift in Sources */,
+				CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */,
 				CF4A79A62115FCA300517FDD /* SettingsUnitsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
