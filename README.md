@@ -1,7 +1,11 @@
 # Open Source Weather App
 ------------------------------
-#### Master branch build status: 
-![](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=master)
+#### Branches build status: 
+![Master branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=master)
+![Develop branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=develop)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/alokc83/WeatherInfo/graphs/commit-activity)
+![Language](https://img.shields.io/badge/Language-Swift%204-orange.svg)
+
 
 If you are designer and would like to contribute with your artwork. Please feel free to contact me. 
 With subject "Github - WeatherInfo" @ alok.ch83@gmail.com
