@@ -31,7 +31,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0w-IP-yH1">
                                                 <rect key="frame" x="0.0" y="0.0" width="319" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                                <color key="textColor" red="1" green="0.37254902719999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aug 5, 2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6z-UY-i6O">
@@ -71,6 +71,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" red="0.99136151159516761" green="1" blue="0.80101394218133004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="apt-5d-veC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3zl-Cb-Kdq"/>
                     <constraint firstAttribute="trailing" secondItem="apt-5d-veC" secondAttribute="trailing" constant="8" id="MT0-fH-U4o"/>

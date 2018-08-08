@@ -152,13 +152,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-3X-fdy">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fWp-bq-to1">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DayScene" translatesAutoresizingMaskIntoConstraints="NO" id="fWp-bq-to1">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-dW-5us">
                                         <rect key="frame" x="60" y="8" width="259" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
-                                        <color key="textColor" red="1" green="0.37254902719999999" blue="0.35686275360000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69r-DN-osz">
@@ -168,28 +168,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuQ-KD-Muj">
-                                        <rect key="frame" x="20" y="130" width="335" height="62"/>
+                                        <rect key="frame" x="20" y="140" width="335" height="52"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-Yz-MY8">
-                                        <rect key="frame" x="8" y="90" width="141.5" height="20.5"/>
+                                        <rect key="frame" x="8" y="90" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3S-SZ-pzM">
-                                        <rect key="frame" x="225.5" y="90" width="141.5" height="20.5"/>
+                                        <rect key="frame" x="235.5" y="90" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dkw-ig-jHH">
-                                        <rect key="frame" x="157.5" y="70" width="60" height="60"/>
+                                        <rect key="frame" x="147.5" y="60" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="5S3-Ph-nCT"/>
-                                            <constraint firstAttribute="height" constant="60" id="iDa-EL-hve"/>
+                                            <constraint firstAttribute="width" constant="80" id="5S3-Ph-nCT"/>
+                                            <constraint firstAttribute="height" constant="80" id="iDa-EL-hve"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcf-Yd-bGB">
@@ -272,12 +272,12 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="Ye9-6J-vx3" id="NcL-6v-0Mm"/>
                         <outlet property="dateLabel" destination="Uxg-dW-5us" id="qn6-RQ-RE9"/>
-                        <outlet property="dayBackgroundImage" destination="fWp-bq-to1" id="GXg-kl-eVQ"/>
                         <outlet property="descriptionLabel" destination="iuQ-KD-Muj" id="qYo-0D-BAb"/>
                         <outlet property="iconImageView" destination="Dkw-ig-jHH" id="Lmk-sA-QuB"/>
                         <outlet property="messageLabel" destination="4Ww-3T-lGw" id="1Hy-vA-d84"/>
                         <outlet property="temperatureLabel" destination="yNM-Yz-MY8" id="Igd-xK-sgb"/>
                         <outlet property="timeLabel" destination="69r-DN-osz" id="bWL-sS-7mb"/>
+                        <outlet property="upperSectionBackgroundImage" destination="fWp-bq-to1" id="GXg-kl-eVQ"/>
                         <outlet property="weatherDataContainer" destination="mPP-3X-fdy" id="i8v-xw-bjA"/>
                         <outlet property="windSpeedLabel" destination="G3S-SZ-pzM" id="TA2-B6-aoC"/>
                     </connections>
@@ -552,6 +552,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DayScene" width="414" height="305"/>
         <image name="button-location-normal" width="28" height="28"/>
         <image name="button-settings-normal" width="28" height="28"/>
     </resources>

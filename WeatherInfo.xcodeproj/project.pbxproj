@@ -225,7 +225,7 @@
 		BBD3252820E76CDD0013208F /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
-				CFE77E2C211A1179003E4910 /* View-UI */,
+				CFE77E2C211A1179003E4910 /* Views-UI */,
 				CF4A79C32118F63700517FDD /* Services */,
 				CF4A79332114D00300517FDD /* ViewControllers */,
 				CF4A792E2114C8B200517FDD /* Configuration */,
@@ -527,14 +527,14 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
-		CFE77E2C211A1179003E4910 /* View-UI */ = {
+		CFE77E2C211A1179003E4910 /* Views-UI */ = {
 			isa = PBXGroup;
 			children = (
 				CFE77FDC211A5189003E4910 /* Protocols */,
 				CF4A79992115E57800517FDD /* WeatherDayTableViewCell.swift */,
 				CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */,
 			);
-			path = "View-UI";
+			path = "Views-UI";
 			sourceTree = "<group>";
 		};
 		CFE77FDC211A5189003E4910 /* Protocols */ = {
