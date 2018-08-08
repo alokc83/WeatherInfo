@@ -62,11 +62,7 @@ extension UIImage {
         case "clear-day", "partly-cloudy-day": return UIImage(named: SceneTime.day.string())
         case "clear-night", "partly-cloudy-night":
             return UIImage(named: SceneTime.night.string())
-        case "rain": return nil
-        case "snow": return nil
-        case "sleet": return nil
-        case "wind", "cloudy": return nil
-        default: return nil
+        default: return UIImage(named: SceneTime.day.string())
         }
     }
     
