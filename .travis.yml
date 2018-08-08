@@ -18,7 +18,7 @@
   ],
   "install": true,
   "script": [
-    "script/intelligent-bootstrap" #,
+    "scripts/intelligent-bootstrap" #,
     #"fastlane scan -s Carthage-CI"
   ],
   "os": "osx"
