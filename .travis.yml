@@ -1,5 +1,5 @@
 {
-  "language": "objective-c",
+  "language": "swift",
   "osx_image": "xcode9",
   "cache": {
     "directories": [
@@ -15,7 +15,7 @@
   ],
   "install": true,
   "script": [
-    "script/intelligent-bootstrap" #,
+    #"script/intelligent-bootstrap" #,
     #"fastlane scan -s Carthage-CI"
   ],
   "os": "osx"
