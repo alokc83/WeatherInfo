@@ -31,7 +31,6 @@
 		CF4A79212114BEA600517FDD /* Timepiece.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED52114BA0900ABD53F /* Timepiece.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF4A79272114C74D00517FDD /* WeatherDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79242114C74D00517FDD /* WeatherDayData.swift */; };
 		CF4A79282114C74D00517FDD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79252114C74D00517FDD /* Location.swift */; };
-		CF4A79292114C74D00517FDD /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79262114C74D00517FDD /* WeatherData.swift */; };
 		CF4A79302114C8D800517FDD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A792F2114C8D800517FDD /* Configuration.swift */; };
 		CF4A79382114D04B00517FDD /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79352114D04B00517FDD /* DayViewController.swift */; };
 		CF4A79392114D04B00517FDD /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79362114D04B00517FDD /* WeatherViewController.swift */; };
@@ -65,6 +64,9 @@
 		CF4A79C02118F32F00517FDD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */; };
 		CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C12118F56D00517FDD /* LocationService.swift */; };
 		CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C42118F66400517FDD /* GeocoderService.swift */; };
+		CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */; };
+		CFE77FDE211A51A4003E4910 /* TableCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */; };
+		CFE77FE0211AAA98003E4910 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDF211AAA98003E4910 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +123,6 @@
 		CF4A79102114BE7B00517FDD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		CF4A79242114C74D00517FDD /* WeatherDayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDayData.swift; sourceTree = "<group>"; };
 		CF4A79252114C74D00517FDD /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		CF4A79262114C74D00517FDD /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherData.swift; path = ../../../../Downloads/Cloudy/Cloudy/Models/WeatherData.swift; sourceTree = "<group>"; };
 		CF4A792F2114C8D800517FDD /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		CF4A79352114D04B00517FDD /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		CF4A79362114D04B00517FDD /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +163,9 @@
 		CF936ED32114BA0900ABD53F /* PMKAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKAlamofire.framework; path = Carthage/Build/iOS/PMKAlamofire.framework; sourceTree = SOURCE_ROOT; };
 		CF936ED42114BA0900ABD53F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = SOURCE_ROOT; };
 		CF936ED52114BA0900ABD53F /* Timepiece.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Timepiece.framework; path = Carthage/Build/iOS/Timepiece.framework; sourceTree = SOURCE_ROOT; };
+		CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
+		CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellRepresentable.swift; sourceTree = "<group>"; };
+		CFE77FDF211AAA98003E4910 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 		BBD3252820E76CDD0013208F /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CFE77E2C211A1179003E4910 /* Views-UI */,
 				CF4A79C32118F63700517FDD /* Services */,
 				CF4A79332114D00300517FDD /* ViewControllers */,
 				CF4A792E2114C8B200517FDD /* Configuration */,
@@ -228,11 +233,8 @@
 				CF4A792C2114C89C00517FDD /* Extensions */,
 				CF4A792A2114C87800517FDD /* Protocols */,
 				CF4A79232114BFD200517FDD /* AppInit */,
-				CF4A790B2114BC4800517FDD /* View-UI */,
-				CF4A79082114BC1400517FDD /* Utilities */,
 				CF4A79052114BBFB00517FDD /* Managers */,
 				CF4A79022114BBCC00517FDD /* Models */,
-				BBD3252D20E76CDD0013208F /* Main.storyboard */,
 				CF4A792B2114C89100517FDD /* Resources */,
 				BBD3253220E76CE10013208F /* LaunchScreen.storyboard */,
 				BBD3253520E76CE10013208F /* Info.plist */,
@@ -263,8 +265,8 @@
 		CF4A79022114BBCC00517FDD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CFE77FDF211AAA98003E4910 /* WeatherData.swift */,
 				CF4A79252114C74D00517FDD /* Location.swift */,
-				CF4A79262114C74D00517FDD /* WeatherData.swift */,
 				CF4A79242114C74D00517FDD /* WeatherDayData.swift */,
 			);
 			path = Models;
@@ -277,20 +279,6 @@
 				CF4A79062114BC0E00517FDD /* NetworkManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		CF4A79082114BC1400517FDD /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		CF4A790B2114BC4800517FDD /* View-UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View-UI";
 			sourceTree = "<group>";
 		};
 		CF4A79232114BFD200517FDD /* AppInit */ = {
@@ -332,6 +320,7 @@
 		CF4A792D2114C8A700517FDD /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				BBD3252D20E76CDD0013208F /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -359,7 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4A79AE2116858600517FDD /* Protocols */,
-				CF4A79982115E57800517FDD /* Table View Cells */,
 				CF4A79352114D04B00517FDD /* DayViewController.swift */,
 				CF4A79362114D04B00517FDD /* WeatherViewController.swift */,
 				CF4A79372114D04B00517FDD /* WeekViewController.swift */,
@@ -428,14 +416,6 @@
 			isa = PBXGroup;
 			children = (
 				CF4A798F21150E9100517FDD /* SettingsTableViewCell.swift */,
-			);
-			path = "Table View Cells";
-			sourceTree = "<group>";
-		};
-		CF4A79982115E57800517FDD /* Table View Cells */ = {
-			isa = PBXGroup;
-			children = (
-				CF4A79992115E57800517FDD /* WeatherDayTableViewCell.swift */,
 			);
 			path = "Table View Cells";
 			sourceTree = "<group>";
@@ -547,6 +527,24 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		CFE77E2C211A1179003E4910 /* Views-UI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE77FDC211A5189003E4910 /* Protocols */,
+				CF4A79992115E57800517FDD /* WeatherDayTableViewCell.swift */,
+				CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */,
+			);
+			path = "Views-UI";
+			sourceTree = "<group>";
+		};
+		CFE77FDC211A5189003E4910 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -656,6 +654,7 @@
 			files = (
 				BBD3253420E76CE10013208F /* LaunchScreen.storyboard in Resources */,
 				BBD3253120E76CE10013208F /* Assets.xcassets in Resources */,
+				CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */,
 				BBD3252F20E76CDD0013208F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,7 +711,6 @@
 				CF4A79402114D28900517FDD /* DayViewModel.swift in Sources */,
 				CF4A799E2115E62C00517FDD /* DataManager.swift in Sources */,
 				CF4A798321150DC700517FDD /* JSONDecodable.swift in Sources */,
-				CF4A79292114C74D00517FDD /* WeatherData.swift in Sources */,
 				CF4A799221150E9100517FDD /* LocationsViewController.swift in Sources */,
 				CF4A799521150E9100517FDD /* AddLocationViewController.swift in Sources */,
 				BBD3252A20E76CDD0013208F /* AppDelegate.swift in Sources */,
@@ -721,6 +719,7 @@
 				CF4A799A2115E57800517FDD /* WeatherDayTableViewCell.swift in Sources */,
 				CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */,
 				CF4A79B0211685A300517FDD /* WeatherDayRepresentable.swift in Sources */,
+				CFE77FDE211A51A4003E4910 /* TableCellRepresentable.swift in Sources */,
 				CF4A793E2114D1AE00517FDD /* UserDefaults+Extension.swift in Sources */,
 				CF4A79A42115F88D00517FDD /* SettingsTimeViewModel.swift in Sources */,
 				CF4A79272114C74D00517FDD /* WeatherDayData.swift in Sources */,
@@ -732,6 +731,7 @@
 				CF4A799321150E9100517FDD /* LocationRepresentable.swift in Sources */,
 				CF4A79382114D04B00517FDD /* DayViewController.swift in Sources */,
 				CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */,
+				CFE77FE0211AAA98003E4910 /* WeatherData.swift in Sources */,
 				CF4A79A62115FCA300517FDD /* SettingsUnitsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
