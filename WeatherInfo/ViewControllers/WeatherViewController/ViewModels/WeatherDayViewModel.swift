@@ -47,10 +47,22 @@ struct WeatherDayViewModel {
 extension WeatherDayViewModel {
     private func format(temperature: Double) -> String {
         switch UserDefaults.temperatureNotation() {
-        case .fahrenheit: return String(format: "%0f F", temperature)
-        case .celsius: return String(format: "%0f C", temperature.toCelcius())
+        case .fahrenheit: return String(format: "%.1f °F", temperature)
+        case .celsius: return String(format: "%.1f °C", temperature.toCelcius())
         }
     }
 }
 
 extension WeatherDayViewModel: WeatherDayRepresentable { }
+extension WeatherDayViewModel: TableViewCellRepresentable {
+    var cellHeight: CGFloat {
+        return 107.0
+    }
+    
+    func tableCellInstance(for tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as! WeatherDayTableViewCell
+        
+        cell.configure(with: self)
+        return cell
+    }
+}

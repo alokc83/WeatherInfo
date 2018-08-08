@@ -77,51 +77,37 @@ extension UserDefaults {
 extension UserDefaults {
 
     // MARK: - Locations
-
     static func loadLocations() -> [Location] {
         guard let dictionaries = UserDefaults.standard.array(forKey: UserDefaultsKeys.locations) as? [ [String: Any] ] else {
             return []
         }
 
-        return dictionaries.flatMap({ (dictionary) -> Location? in
+        return dictionaries.compactMap { (dictionary) -> Location? in
             return Location(dictionary: dictionary)
-        })
+        }
     }
 
     static func addLocation(_ location: Location) {
-        // Load Locations
         var locations = loadLocations()
-
-        // Add Location
         locations.append(location)
-
-        // Save Locations
         saveLocations(locations)
     }
 
     static func removeLocation(_ location: Location) {
-        // Load Locations
         var locations = loadLocations()
-
-        // Fetch Location Index
         guard let index = locations.index(of: location) else {
             return
         }
 
-        // Remove Location
         locations.remove(at: index)
-
-        // Save Locations
         saveLocations(locations)
     }
 
     // MARK: -
-
     private static func saveLocations(_ locations: [Location]) {
-        // Transform Locations
-        let dictionaries: [ [String: Any] ] = locations.map{ $0.asDictionary }
 
-        // Save Locations
+        let dictionaries: [ [String: Any] ] = locations.map { $0.asDictionary }
+
         UserDefaults.standard.set(dictionaries, forKey: UserDefaultsKeys.locations)
     }
 

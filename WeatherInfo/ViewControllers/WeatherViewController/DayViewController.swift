@@ -27,7 +27,8 @@ class DayViewController: WeatherViewController {
     @IBOutlet var temperatureLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var iconImageView: UIImageView!
-
+    @IBOutlet weak var dayBackgroundImage: UIImageView!
+    
     // MARK: -
 
     var delegate: DayViewControllerDelegate?
@@ -83,6 +84,7 @@ class DayViewController: WeatherViewController {
         dateLabel.text = viewModel.date
         timeLabel.text = viewModel.time
         iconImageView.image = viewModel.image
+        dayBackgroundImage.image = viewModel.backgroundImage
         windSpeedLabel.text = viewModel.windSpeed
         descriptionLabel.text = viewModel.summary
         temperatureLabel.text = viewModel.temperature

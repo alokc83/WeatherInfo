@@ -69,6 +69,8 @@ class WeekViewController: WeatherViewController {
 
     private func setupTableView() {
         tableView.separatorInset = UIEdgeInsets.zero
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        tableView.register(UINib(nibName: "WeatherDayTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "WeatherDayCell")
     }
 
     private func setupRefreshControl() {
@@ -111,12 +113,11 @@ extension WeekViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as? WeatherDayTableViewCell else { fatalError("Unexpected Table View Cell") }
 
-        if let viewModel = viewModel?.viewModel(for: indexPath.row) {
-            cell.configure(with: viewModel)
+        guard let viewModel = viewModel?.viewModel(for: indexPath.row) else {
+            fatalError("Unexpected Table View Cell")
         }
-        return cell
+        return viewModel.tableCellInstance(for: tableView, indexPath: indexPath)
     }
 
 }
