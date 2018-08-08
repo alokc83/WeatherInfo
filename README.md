@@ -1,7 +1,7 @@
-# Weather-info
-
-Open Source Weather App
+# Open Source Weather App
 ------------------------------
+#### Master branch build status: 
+![](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=master)
 
 If you are designer and would like to contribute with your artwork. Please feel free to contact me. 
 With subject "Github - WeatherInfo" @ alok.ch83@gmail.com
