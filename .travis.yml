@@ -39,3 +39,4 @@ script:
   #- set -o pipefail 
  # - xcodebuild test -enableCodeCoverage YES -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
   - fastlane scan -s WeatherInfo
+  - xcodebuild -workspace WeatherInfo.xcworkspace -scheme WeatherInfo -sdk iphonesimulator11.4 -configuration Debug build test
