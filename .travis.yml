@@ -2,7 +2,7 @@ language: swift
 osx_image: xcode9.4
 xcode_project: WeatherInfo.xcworkspace
 xcode_scheme: WeatherInfo
-xcode_sdk: iphoneos11.4
+xcode_sdk: iphonesimulator11.4
 os: osx
 #branches:
 #  only:
@@ -21,6 +21,7 @@ before_install:
   - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
   - 'gem install fastlane --no-ri --no-rdoc --no-document'
   - pod install
+  - gem install xcpretty -N
 
 install: true
 before_script:
@@ -29,4 +30,4 @@ before_script:
   - gem install CFPropertyList
 
 script:
-  - 
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace WeatherInfo.xcworkspace -scheme WeatherInfo -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
