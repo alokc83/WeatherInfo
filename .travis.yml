@@ -41,4 +41,4 @@ script:
     - fastlane scan -s WeatherInfo
     - xcodebuild -scheme WeatherInfo -workspace WeatherInfo.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t f3824237-f1a3-4caf-acf6-8f264d5e02f8
