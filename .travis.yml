@@ -15,12 +15,16 @@ cache:
 podfile: Podfile
 
 env:
-  - PROJECTNAME=WeatherInfo
+
+git:
+  submodules: false
 
 before_install:
  # - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
   - 'gem install fastlane --no-ri --no-rdoc --no-document'
   - pod install
+  #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
  # - gem install xcpretty -N
  # - brew update
   #- brew install swiftlint || true

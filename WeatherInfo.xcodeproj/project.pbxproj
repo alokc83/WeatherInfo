@@ -20,18 +20,6 @@
 		CF4A79132114BEA600517FDD /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF4A79102114BE7B00517FDD /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF4A79142114BEA600517FDD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ECF2114BA0800ABD53F /* Alamofire.framework */; };
 		CF4A79152114BEA600517FDD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ECF2114BA0800ABD53F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A79162114BEA600517FDD /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED22114BA0800ABD53F /* Kingfisher.framework */; };
-		CF4A79172114BEA600517FDD /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED22114BA0800ABD53F /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A79182114BEA600517FDD /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED32114BA0900ABD53F /* PMKAlamofire.framework */; };
-		CF4A79192114BEA600517FDD /* PMKAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED32114BA0900ABD53F /* PMKAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A791A2114BEA600517FDD /* PMKCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED02114BA0800ABD53F /* PMKCoreLocation.framework */; };
-		CF4A791B2114BEA600517FDD /* PMKCoreLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED02114BA0800ABD53F /* PMKCoreLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A791C2114BEA600517FDD /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED42114BA0900ABD53F /* PromiseKit.framework */; };
-		CF4A791D2114BEA600517FDD /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED42114BA0900ABD53F /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A791E2114BEA600517FDD /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED12114BA0800ABD53F /* SVProgressHUD.framework */; };
-		CF4A791F2114BEA600517FDD /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED12114BA0800ABD53F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CF4A79202114BEA600517FDD /* Timepiece.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED52114BA0900ABD53F /* Timepiece.framework */; };
-		CF4A79212114BEA600517FDD /* Timepiece.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF936ED52114BA0900ABD53F /* Timepiece.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF4A79272114C74D00517FDD /* WeatherDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79242114C74D00517FDD /* WeatherDayData.swift */; };
 		CF4A79282114C74D00517FDD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79252114C74D00517FDD /* Location.swift */; };
 		CF4A79302114C8D800517FDD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A792F2114C8D800517FDD /* Configuration.swift */; };
@@ -96,13 +84,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CF4A791F2114BEA600517FDD /* SVProgressHUD.framework in Embed Frameworks */,
 				CF4A79132114BEA600517FDD /* SwiftyJSON.framework in Embed Frameworks */,
-				CF4A79172114BEA600517FDD /* Kingfisher.framework in Embed Frameworks */,
-				CF4A791B2114BEA600517FDD /* PMKCoreLocation.framework in Embed Frameworks */,
-				CF4A79212114BEA600517FDD /* Timepiece.framework in Embed Frameworks */,
-				CF4A791D2114BEA600517FDD /* PromiseKit.framework in Embed Frameworks */,
-				CF4A79192114BEA600517FDD /* PMKAlamofire.framework in Embed Frameworks */,
 				CF4A79152114BEA600517FDD /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -185,13 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4A791E2114BEA600517FDD /* SVProgressHUD.framework in Frameworks */,
 				CF4A79122114BEA600517FDD /* SwiftyJSON.framework in Frameworks */,
-				CF4A79162114BEA600517FDD /* Kingfisher.framework in Frameworks */,
-				CF4A791A2114BEA600517FDD /* PMKCoreLocation.framework in Frameworks */,
-				CF4A79202114BEA600517FDD /* Timepiece.framework in Frameworks */,
-				CF4A791C2114BEA600517FDD /* PromiseKit.framework in Frameworks */,
-				CF4A79182114BEA600517FDD /* PMKAlamofire.framework in Frameworks */,
 				CF4A79142114BEA600517FDD /* Alamofire.framework in Frameworks */,
 				BF1FB0FC5C43A6AF5B9FCB48 /* Pods_WeatherInfo.framework in Frameworks */,
 			);
