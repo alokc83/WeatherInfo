@@ -15,16 +15,15 @@ cache:
 podfile: Podfile
 
 env:
-  - UPLOAD_IOS_SNAPSHOT_BUCKET_NAME=eigen-ci UPLOAD_IOS_SNAPSHOT_BUCKET_PR...
   - PROJECTNAME=WeatherInfo
 
 before_install:
-  - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
+ # - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
   - 'gem install fastlane --no-ri --no-rdoc --no-document'
   - pod install
-  - gem install xcpretty -N
-  - brew update
-  - brew install swiftlint || true
+ # - gem install xcpretty -N
+ # - brew update
+  #- brew install swiftlint || true
 
 install: true
 before_script:
@@ -35,4 +34,4 @@ before_script:
 script:
   #- set -o pipefail 
  # - xcodebuild test -enableCodeCoverage YES -workspace ${PROJECT_NAME}.xcworkspace -scheme ${PROJECT_NAME} -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
-  - fastlane scan -s ${PROJECT_NAME}
+  - fastlane scan -s WeatherInfo
