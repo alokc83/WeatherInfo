@@ -3,7 +3,7 @@
   "osx_image": "xcode9.4",
   "xcode_project": "WeatherInfo.xcodeproj", 
   "xcode_scheme": "WeatherInfo",
-  #"xcode_sdk": "iphonesimulator11",
+  "xcode_sdk": "iphonesimulator11",
   "cache": {
     "directories": [
       "Carthage"
@@ -18,8 +18,8 @@
   ],
   "install": true,
   "script": [
-    "scripts/intelligent-bootstrap" #,
-    #"fastlane scan -s Carthage-CI"
+    "scripts/intelligent-bootstrap",
+    "fastlane scan -s WeatherInfo"
   ],
   "os": "osx"
 }
