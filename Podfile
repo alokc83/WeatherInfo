@@ -6,6 +6,7 @@ target 'WeatherInfo' do
   use_frameworks!
 pod 'SVProgressHUD'
 pod 'Alamofire', '~> 4.7'
+pod 'SwiftyJSON', '~> 4.0'
   # Pods for WeatherInfo
 
   target 'WeatherInfoTests' do
