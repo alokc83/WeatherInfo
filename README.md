@@ -24,12 +24,21 @@ Alok C
 
 Todo list: <br>
 ☀️ Adding codecov.io   <br>
+⛈ fastlane integration <br>
 ⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
 ⛈ Adding PromiseKit <br>
 ⛈ Adding Qucik & Nible for Testing<br>
 ⛈ Get up to 30% Code coverage <br>
 ⛈ Adding dashboard with multiple cities weather condition <br>
 ⛈ Travel Plan: Weather condition as per your drive plan <br>
+
+### Code Covrage Grid
+---------------------------
+![CodeCov Groid](https://codecov.io/gh/alokc83/WeatherInfo/branch/more-travis-codecov-configuration/graphs/tree.svg)
+
+### Commits Graph
+---------------------------
+![Interactive Commit Graph](https://codecov.io/gh/alokc83/WeatherInfo/branch/master/graphs/commits.svg)
 
 
 ### App Screenshots
