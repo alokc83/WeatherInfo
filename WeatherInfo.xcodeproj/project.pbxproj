@@ -54,8 +54,7 @@
 		CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */; };
 		CFE77FDE211A51A4003E4910 /* TableCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */; };
 		CFE77FE0211AAA98003E4910 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDF211AAA98003E4910 /* WeatherData.swift */; };
-		CFE78094211D3D18003E4910 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE78091211D3C93003E4910 /* SVProgressHUD.framework */; };
-		CFE78095211D3D18003E4910 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFE78091211D3C93003E4910 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFE7809B211D45A9003E4910 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE78091211D3C93003E4910 /* SVProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,28 +86,7 @@
 			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
 			remoteInfo = SVProgressHUD;
 		};
-		CFE78096211D3D18003E4910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFE7808B211D3C93003E4910 /* SVProgressHUD.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4A9D7DD71AB345980039B273;
-			remoteInfo = "SVProgressHUD-Framework";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CFE78098211D3D18003E4910 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CFE78095211D3D18003E4910 /* SVProgressHUD.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A32251DDB8E160DB9875DA0 /* Pods-WeatherInfoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherInfoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherInfoUITests/Pods-WeatherInfoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE78094211D3D18003E4910 /* SVProgressHUD.framework in Frameworks */,
+				CFE7809B211D45A9003E4910 /* SVProgressHUD.framework in Frameworks */,
 				BF1FB0FC5C43A6AF5B9FCB48 /* Pods_WeatherInfo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,12 +572,10 @@
 				BBD3252420E76CDD0013208F /* Resources */,
 				CF936EDD2114BA6A00ABD53F /* Swiftlint */,
 				25CF42956DC4429F8A9D6708 /* [CP] Embed Pods Frameworks */,
-				CFE78098211D3D18003E4910 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CFE78097211D3D18003E4910 /* PBXTargetDependency */,
 			);
 			name = WeatherInfo;
 			productName = WeatherInfo;
@@ -902,11 +878,6 @@
 			isa = PBXTargetDependency;
 			target = BBD3252520E76CDD0013208F /* WeatherInfo */;
 			targetProxy = BBD3254620E76CE10013208F /* PBXContainerItemProxy */;
-		};
-		CFE78097211D3D18003E4910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SVProgressHUD-Framework";
-			targetProxy = CFE78096211D3D18003E4910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
