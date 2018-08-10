@@ -1,25 +1,54 @@
-{
-  "language": "swift",
-  "osx_image": "xcode9.4",
-  "xcode_project": "WeatherInfo.xcodeproj", 
-  "xcode_scheme": "WeatherInfo",
-  "xcode_sdk": "iphonesimulator11",
-  "cache": {
-    "directories": [
-      "Carthage"
-    ]
-  },
-  "before_install": [
-    "curl -L -O https://github.com/Carthage/Carthage/releases/download/0.25.0/Carthage.pkg",
-    "sudo installer -pkg Carthage.pkg -target /",
-    "curl -L -O https://github.com/YPlan/CartfileDiff/releases/download/0.1/CartfileDiff.pkg",
-    "sudo installer -pkg CartfileDiff.pkg -target /",
-    "gem install fastlane --no-ri --no-rdoc --no-document"
-  ],
-  "install": true,
-  "script": [
-    "scripts/intelligent-bootstrap",
-    "fastlane scan -s WeatherInfo"
-  ],
-  "os": "osx"
-}
+# .travis.yml general file
+language: swift
+osx_image: xcode9.4
+xcode_project: WeatherInfo.xcodeproj
+xcode_scheme: WeatherInfo
+xcode_sdk: iphonesimulator11.4
+os: osx
+#branches:
+#  only:
+#    - develop
+ #   - master
+    
+cache:
+  - bundler
+  - Carthage
+  # if using cocoapods 
+  #- cocoapods
+podfile: Podfile
+
+env:
+
+git:
+  submodules: false
+
+before_install:
+    - 'gem install fastlane --no-ri --no-rdoc --no-document'
+    - gem install xcpretty -N
+    - curl -L -O https://github.com/Carthage/Carthage/releases/download/0.25.0/Carthage.pkg
+    - sudo installer -pkg Carthage.pkg -target /,
+    - curl -L -O https://github.com/YPlan/CartfileDiff/releases/download/0.1/CartfileDiff.pkg
+    - sudo installer -pkg CartfileDiff.pkg -target /
+    #- pod install
+    # if you have submodule in your project 
+    #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    #- git submodule update --init --recursive
+    
+    # Optional 
+    #- brew update
+    #- brew install swiftlint || true
+
+install: true
+before_script:
+  - gem install cocoapods
+  - gem install colorize
+  - gem install CFPropertyList
+
+script:
+    - scripts/intelligent-bootstrap
+    - set -o pipefail 
+    - xcodebuild test -enableCodeCoverage YES -workspace WeatherInfo.xcworkspace -scheme WeatherInfo -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
+    - fastlane scan -s WeatherInfo
+    - xcodebuild -scheme WeatherInfo -workspace WeatherInfo.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t f3824237-f1a3-4caf-acf6-8f264d5e02f8
