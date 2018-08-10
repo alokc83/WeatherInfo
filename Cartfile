@@ -1,8 +1,9 @@
-github "naoty/Timepiece"
 github "Alamofire/Alamofire" ~> 4.4
-github "mxcl/PromiseKit" ~> 6.0
-github "PromiseKit/Alamofire-" ~> 3.0
-github "onevcat/Kingfisher"
-github "PromiseKit/CoreLocation" ~> 3.0
-github "SVProgressHUD/SVProgressHUD"
 github "SwiftyJSON/SwiftyJSON"
+#github "naoty/Timepiece"
+#github "mxcl/PromiseKit" ~> 6.0
+#github "PromiseKit/Alamofire-" ~> 3.0
+#github "onevcat/Kingfisher"
+#github "PromiseKit/CoreLocation" ~> 3.0
+#github "SVProgressHUD/SVProgressHUD"
+
