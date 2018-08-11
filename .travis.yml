@@ -19,8 +19,9 @@ branches:
   only:
     - master
     - develop
-    - /^more.*$/
+    - /^todo*$/
     - /^feat*/
+    - /^bug*/
   
 before_cache: 
 # if needs to clean or something 
