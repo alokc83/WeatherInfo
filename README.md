@@ -24,7 +24,8 @@ Alok C
 
 Todo list: <br>
 ☀️ Adding codecov.io   <br>
-⛈ fastlane integration <br>
+☀️ fastlane integration <br>
+⛈ Add UI Test Target <br>
 ⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
 ⛈ Adding PromiseKit <br>
 ⛈ Adding Qucik & Nible for Testing<br>
