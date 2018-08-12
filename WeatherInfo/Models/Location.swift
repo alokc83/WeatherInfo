@@ -59,7 +59,7 @@ extension Location {
 
 extension Location: Equatable {
 
-    static func ==(lhs: Location, rhs: Location) -> Bool {
+    static func == (lhs: Location, rhs: Location) -> Bool {
         return
             lhs.name == rhs.name &&
                 lhs.latitude == rhs.latitude &&

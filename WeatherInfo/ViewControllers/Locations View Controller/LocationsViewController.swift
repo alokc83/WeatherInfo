@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-protocol LocationsViewControllerDelegate {
+protocol LocationsViewControllerDelegate: class {
     func controller(_ controller: LocationsViewController, didSelectLocation location: CLLocation)
 }
 
@@ -37,7 +37,7 @@ class LocationsViewController: UIViewController {
 
     // MARK: -
 
-    var delegate: LocationsViewControllerDelegate?
+    weak var delegate: LocationsViewControllerDelegate?
 
     // MARK: - View Life Cycle
 
@@ -54,7 +54,7 @@ class LocationsViewController: UIViewController {
 
         switch identifier {
         case segueAddLocationView:
-            if let addLocationViewController = segue.destination as? AddLocationViewController{
+            if let addLocationViewController = segue.destination as? AddLocationViewController {
                 addLocationViewController.delegate = self
             } else {
                 fatalError("Unexpected Destination View Controller")

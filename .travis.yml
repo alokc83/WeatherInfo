@@ -19,8 +19,9 @@ branches:
   only:
     - master
     - develop
-    - /^more.*$/
+    - /^todo*$/
     - /^feat*/
+    - /^bug*/
   
 before_cache: 
 # if needs to clean or something 
@@ -80,5 +81,5 @@ after_failure:
 # Notify people 
 before_deploy:
 deploy:
-    skip_cleanup: false
+    #skip_cleanup: false
 after_deploy:

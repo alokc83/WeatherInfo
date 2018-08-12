@@ -145,6 +145,8 @@
 		CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
 		CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellRepresentable.swift; sourceTree = "<group>"; };
 		CFE77FDF211AAA98003E4910 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		CFE780A6211ECABB003E4910 /* WeatherInfoUITestX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoUITestX.swift; sourceTree = "<group>"; };
+		CFE780A8211ECABB003E4910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				BBD3252820E76CDD0013208F /* WeatherInfo */,
+				CFE780A5211ECABB003E4910 /* WeatherInfoUITestX */,
 				CF936ECE2114B9E100ABD53F /* Frameworks */,
 				BBD3253D20E76CE10013208F /* WeatherInfoTests */,
 				BBD3254820E76CE10013208F /* WeatherInfoUITests */,
@@ -517,6 +520,15 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		CFE780A5211ECABB003E4910 /* WeatherInfoUITestX */ = {
+			isa = PBXGroup;
+			children = (
+				CFE780A6211ECABB003E4910 /* WeatherInfoUITestX.swift */,
+				CFE780A8211ECABB003E4910 /* Info.plist */,
+			);
+			path = WeatherInfoUITestX;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -581,7 +593,7 @@
 		BBD3251E20E76CDC0013208F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Mt Aden LLC";
 				TargetAttributes = {
@@ -926,7 +938,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,7 +961,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -969,7 +981,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -989,7 +1001,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

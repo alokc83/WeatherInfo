@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct WeatherDayData {
+struct WeatherDayData: Codable {
 
     let time: Date
     let icon: String
