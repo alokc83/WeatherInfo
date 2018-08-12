@@ -81,5 +81,5 @@ after_failure:
 # Notify people 
 before_deploy:
 deploy:
-    skip_cleanup: false
+    #skip_cleanup: false
 after_deploy:
