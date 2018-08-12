@@ -53,7 +53,6 @@
 		CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */; };
 		CFE77FDE211A51A4003E4910 /* TableCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */; };
 		CFE77FE0211AAA98003E4910 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDF211AAA98003E4910 /* WeatherData.swift */; };
-		CFE780A7211ECABB003E4910 /* WeatherInfoUITestX.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE780A6211ECABB003E4910 /* WeatherInfoUITestX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +64,6 @@
 			remoteInfo = WeatherInfo;
 		};
 		BBD3254620E76CE10013208F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BBD3251E20E76CDC0013208F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BBD3252520E76CDD0013208F;
-			remoteInfo = WeatherInfo;
-		};
-		CFE780A9211ECABC003E4910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BBD3251E20E76CDC0013208F /* Project object */;
 			proxyType = 1;
@@ -153,7 +145,6 @@
 		CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
 		CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellRepresentable.swift; sourceTree = "<group>"; };
 		CFE77FDF211AAA98003E4910 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
-		CFE780A4211ECABB003E4910 /* WeatherInfoUITestX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherInfoUITestX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE780A6211ECABB003E4910 /* WeatherInfoUITestX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoUITestX.swift; sourceTree = "<group>"; };
 		CFE780A8211ECABB003E4910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,13 +172,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFE780A1211ECABB003E4910 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -209,7 +193,6 @@
 				BBD3252620E76CDD0013208F /* WeatherInfo.app */,
 				BBD3253A20E76CE10013208F /* WeatherInfoTests.xctest */,
 				BBD3254520E76CE10013208F /* WeatherInfoUITests.xctest */,
-				CFE780A4211ECABB003E4910 /* WeatherInfoUITestX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -604,24 +587,6 @@
 			productReference = BBD3254520E76CE10013208F /* WeatherInfoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		CFE780A3211ECABB003E4910 /* WeatherInfoUITestX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFE780AD211ECABC003E4910 /* Build configuration list for PBXNativeTarget "WeatherInfoUITestX" */;
-			buildPhases = (
-				CFE780A0211ECABB003E4910 /* Sources */,
-				CFE780A1211ECABB003E4910 /* Frameworks */,
-				CFE780A2211ECABB003E4910 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFE780AA211ECABC003E4910 /* PBXTargetDependency */,
-			);
-			name = WeatherInfoUITestX;
-			productName = WeatherInfoUITestX;
-			productReference = CFE780A4211ECABB003E4910 /* WeatherInfoUITestX.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -644,10 +609,6 @@
 						CreatedOnToolsVersion = 9.3.1;
 						TestTargetID = BBD3252520E76CDD0013208F;
 					};
-					CFE780A3211ECABB003E4910 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = BBD3252520E76CDD0013208F;
-					};
 				};
 			};
 			buildConfigurationList = BBD3252120E76CDC0013208F /* Build configuration list for PBXProject "WeatherInfo" */;
@@ -666,7 +627,6 @@
 				BBD3252520E76CDD0013208F /* WeatherInfo */,
 				BBD3253920E76CE10013208F /* WeatherInfoTests */,
 				BBD3254420E76CE10013208F /* WeatherInfoUITests */,
-				CFE780A3211ECABB003E4910 /* WeatherInfoUITestX */,
 			);
 		};
 /* End PBXProject section */
@@ -691,13 +651,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BBD3254320E76CE10013208F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFE780A2211ECABB003E4910 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -785,14 +738,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFE780A0211ECABB003E4910 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFE780A7211ECABB003E4910 /* WeatherInfoUITestX.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -805,11 +750,6 @@
 			isa = PBXTargetDependency;
 			target = BBD3252520E76CDD0013208F /* WeatherInfo */;
 			targetProxy = BBD3254620E76CE10013208F /* PBXContainerItemProxy */;
-		};
-		CFE780AA211ECABC003E4910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BBD3252520E76CDD0013208F /* WeatherInfo */;
-			targetProxy = CFE780A9211ECABC003E4910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -998,7 +938,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1021,7 +961,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1041,7 +981,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1061,7 +1001,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1069,46 +1009,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtaden.edu.ios.WeatherInfoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WeatherInfo;
-			};
-			name = Release;
-		};
-		CFE780AB211ECABC003E4910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TGPZX3U5A;
-				INFOPLIST_FILE = WeatherInfoUITestX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.WeatherInfoUITestX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WeatherInfo;
-			};
-			name = Debug;
-		};
-		CFE780AC211ECABC003E4910 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2TGPZX3U5A;
-				INFOPLIST_FILE = WeatherInfoUITestX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.WeatherInfoUITestX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1151,15 +1051,6 @@
 			buildConfigurations = (
 				BBD3255520E76CE10013208F /* Debug */,
 				BBD3255620E76CE10013208F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFE780AD211ECABC003E4910 /* Build configuration list for PBXNativeTarget "WeatherInfoUITestX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFE780AB211ECABC003E4910 /* Debug */,
-				CFE780AC211ECABC003E4910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
