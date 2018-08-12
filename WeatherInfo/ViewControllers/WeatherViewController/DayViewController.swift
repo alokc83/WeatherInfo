@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DayViewControllerDelegate {
+protocol DayViewControllerDelegate: class {
     func controllerDidTapSettingsButton(controller: DayViewController)
     func controllerDidTapLocationButton(controller: DayViewController)
 }
@@ -31,7 +31,7 @@ class DayViewController: WeatherViewController {
     
     // MARK: -
 
-    var delegate: DayViewControllerDelegate?
+    weak var delegate: DayViewControllerDelegate?
 
     // MARK: -
 

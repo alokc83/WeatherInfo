@@ -60,7 +60,9 @@ extension WeatherDayViewModel: TableViewCellRepresentable {
     }
     
     func tableCellInstance(for tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as! WeatherDayTableViewCell
+        guard
+            let cell = tableView.dequeueReusableCell(withIdentifier: WeatherDayTableViewCell.reuseIdentifier, for: indexPath) as? WeatherDayTableViewCell
+            else { fatalError("Can't create WeatherDayTableViewCell") }
         
         cell.configure(with: self)
         return cell

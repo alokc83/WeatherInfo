@@ -9,14 +9,14 @@
 import Foundation
 import Alamofire
 
-protocol NetworkManagerDelegate {
+protocol NetworkManagerDelegate: class {
     func dataReceived(data: Any?, error: NSError?)
 }
 
 class NetworkManager: NSObject {
     let baseURLString: String = "https://api.darksky.net/forecast/"
     var baseURLWithAPIKeyString: String
-    var delegate: NetworkManagerDelegate?
+    weak var delegate: NetworkManagerDelegate?
     
     init(apiKey: String) {
         self.baseURLWithAPIKeyString = "\(self.baseURLString)\(apiKey)/"
