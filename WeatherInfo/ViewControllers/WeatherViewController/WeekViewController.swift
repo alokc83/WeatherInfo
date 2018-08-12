@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol WeekViewControllerDelegate {
+protocol WeekViewControllerDelegate: class {
     func controllerDidRefresh(controller: WeekViewController)
 }
 
@@ -20,7 +20,7 @@ class WeekViewController: WeatherViewController {
 
     // MARK: -
 
-    var delegate: WeekViewControllerDelegate?
+    weak var delegate: WeekViewControllerDelegate?
     
     // MARK: -
 

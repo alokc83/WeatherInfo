@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol SettingsViewControllerDelegate {
+protocol SettingsViewControllerDelegate: class {
     func controllerDidChangeTimeNotation(controller: SettingsViewController)
     func controllerDidChangeUnitsNotation(controller: SettingsViewController)
     func controllerDidChangeTemperatureNotation(controller: SettingsViewController)
@@ -22,7 +22,7 @@ class SettingsViewController: UIViewController {
 
     // MARK: -
 
-    var delegate: SettingsViewControllerDelegate?
+    weak var delegate: SettingsViewControllerDelegate?
 
     // MARK: - View Life Cycle
 

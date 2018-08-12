@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol AddLocationViewControllerDelegate {
+protocol AddLocationViewControllerDelegate: class {
     func controller(_ controller: AddLocationViewController, didAddLocation location: Location)
 }
 
@@ -24,7 +24,7 @@ class AddLocationViewController: UIViewController {
 
     // MARK: -
 
-    var delegate: AddLocationViewControllerDelegate?
+    weak var delegate: AddLocationViewControllerDelegate?
 
     // MARK: - View Life Cycle
 
