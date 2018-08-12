@@ -23,7 +23,7 @@ Thanks,
 Alok C
 
 Todo list: <br>
-☀️ Adding codecov.io   <br>
+☀️ Adding codecov.io  <br>
 ☀️ fastlane integration <br>
 ☀️ Add UI Test Target <br>
 ⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
