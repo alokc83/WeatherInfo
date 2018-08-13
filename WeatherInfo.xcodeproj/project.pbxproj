@@ -50,7 +50,6 @@
 		CF4A79C02118F32F00517FDD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */; };
 		CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C12118F56D00517FDD /* LocationService.swift */; };
 		CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C42118F66400517FDD /* GeocoderService.swift */; };
-		CFCEC3B12121271000B350F0 /* RootViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */; };
 		CFCEC3B521212CE800B350F0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEC3B321212CE800B350F0 /* Nimble.framework */; };
 		CFCEC3B621212CE800B350F0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEC3B421212CE800B350F0 /* Quick.framework */; };
 		CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */; };
@@ -139,7 +138,6 @@
 		CF4A79C12118F56D00517FDD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		CF4A79C42118F66400517FDD /* GeocoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderService.swift; sourceTree = "<group>"; };
 		CF936ECF2114BA0800ABD53F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerUITests.swift; sourceTree = "<group>"; };
 		CFCEC3B321212CE800B350F0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		CFCEC3B421212CE800B350F0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
 		CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
@@ -500,7 +498,6 @@
 		CFCEC3AF2121268C00B350F0 /* WeatherMainView */ = {
 			isa = PBXGroup;
 			children = (
-				CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */,
 			);
 			path = WeatherMainView;
 			sourceTree = "<group>";
@@ -737,7 +734,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCEC3B12121271000B350F0 /* RootViewControllerUITests.swift in Sources */,
 				BBD3254A20E76CE10013208F /* WeatherInfoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
