@@ -33,6 +33,4 @@ class GeocoderService: LocationService {
             completionHandler(locations, nil)
         }
     }
-    
-    
 }

@@ -9,28 +9,98 @@
 import XCTest
 
 class WeatherInfoUITests: XCTestCase {
-        
+    
+    var app: XCUIApplication!
+    
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
+        app.launch()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSettingsButton() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        app.navigationBars["Settings"].buttons["Done"].tap()
+    }
+    
+    func testClockModeCellsExistence() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        //given
+        let twelveHrCell = app.staticTexts["12 Hour"]
+        let twentyFourHrCell = app.staticTexts["24 Hour"]
+
+        //then
+        XCTAssertTrue(twelveHrCell.exists)
+        XCTAssertTrue(twentyFourHrCell.exists)
+    }
+    
+    func testUnitCellsExistence() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        //given
+        let imperialCell = app.staticTexts["Imperial"]
+        let metricCell = app.staticTexts["Metric"]
+        
+        XCTAssertTrue(imperialCell.exists)
+        XCTAssertTrue(metricCell.exists)
+        
+    }
+    
+    func testTemperatureCellsExistence() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        //given
+        let fahrenheitCell = app.staticTexts["Fahrenheit (°F)"]
+        let celciusCell = app.staticTexts["Celcius (°C)"]
+        
+        XCTAssertTrue(fahrenheitCell.exists)
+        XCTAssertTrue(celciusCell.exists)
+        
+    }
+    
+    //XCTAssertTrue(app.tables.cells.element(boundBy: 0).isSelected)
+    func testTimeModeSelected() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        if app.tables.cells.element(boundBy: 0).isSelected {
+          XCTAssertTrue(app.tables.cells.element(boundBy: 0).isSelected)
+        } else if app.tables.cells.element(boundBy: 1).isSelected {
+            XCTAssertTrue(app.tables.cells.element(boundBy: 1).isSelected)
+        }
+        
+    }
+    
+    func testUnitModeSelected() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        if app.tables.cells.element(boundBy: 2).isSelected {
+            XCTAssertTrue(app.tables.cells.element(boundBy: 2).isSelected)
+        } else if app.tables.cells.element(boundBy: 3).isSelected {
+            XCTAssertTrue(app.tables.cells.element(boundBy: 3).isSelected)
+        }
+    }
+    
+    func testTemperatureUitSelected() {
+        let app = XCUIApplication()
+        app.buttons["button settings normal"].tap()
+        
+        if app.tables.cells.element(boundBy: 4).isSelected {
+            XCTAssertTrue(app.tables.cells.element(boundBy: 4).isSelected)
+        } else if app.tables.cells.element(boundBy: 5).isSelected {
+            XCTAssertTrue(app.tables.cells.element(boundBy: 5).isSelected)
+        }
     }
     
 }

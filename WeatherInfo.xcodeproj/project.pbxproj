@@ -50,6 +50,9 @@
 		CF4A79C02118F32F00517FDD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79BF2118F32F00517FDD /* UIColor+Extension.swift */; };
 		CF4A79C22118F56D00517FDD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C12118F56D00517FDD /* LocationService.swift */; };
 		CF4A79C52118F66400517FDD /* GeocoderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A79C42118F66400517FDD /* GeocoderService.swift */; };
+		CFCEC3B12121271000B350F0 /* RootViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */; };
+		CFCEC3B521212CE800B350F0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEC3B321212CE800B350F0 /* Nimble.framework */; };
+		CFCEC3B621212CE800B350F0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCEC3B421212CE800B350F0 /* Quick.framework */; };
 		CFE77E30211A11C8003E4910 /* WeatherDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */; };
 		CFE77FDE211A51A4003E4910 /* TableCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */; };
 		CFE77FE0211AAA98003E4910 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE77FDF211AAA98003E4910 /* WeatherData.swift */; };
@@ -136,12 +139,9 @@
 		CF4A79C12118F56D00517FDD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		CF4A79C42118F66400517FDD /* GeocoderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderService.swift; sourceTree = "<group>"; };
 		CF936ECF2114BA0800ABD53F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED02114BA0800ABD53F /* PMKCoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKCoreLocation.framework; path = Carthage/Build/iOS/PMKCoreLocation.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED12114BA0800ABD53F /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED22114BA0800ABD53F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED32114BA0900ABD53F /* PMKAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKAlamofire.framework; path = Carthage/Build/iOS/PMKAlamofire.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED42114BA0900ABD53F /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = SOURCE_ROOT; };
-		CF936ED52114BA0900ABD53F /* Timepiece.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Timepiece.framework; path = Carthage/Build/iOS/Timepiece.framework; sourceTree = SOURCE_ROOT; };
+		CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerUITests.swift; sourceTree = "<group>"; };
+		CFCEC3B321212CE800B350F0 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		CFCEC3B421212CE800B350F0 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
 		CFE77E2E211A11C8003E4910 /* WeatherDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDayTableViewCell.xib; sourceTree = "<group>"; };
 		CFE77FDD211A51A4003E4910 /* TableCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellRepresentable.swift; sourceTree = "<group>"; };
 		CFE77FDF211AAA98003E4910 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
@@ -160,6 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCEC3B621212CE800B350F0 /* Quick.framework in Frameworks */,
+				CFCEC3B521212CE800B350F0 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +219,7 @@
 		BBD3253D20E76CE10013208F /* WeatherInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CFCEC3B221212CC500B350F0 /* Framework */,
 				CF4A79B4211688D100517FDD /* Test Cases */,
 				CF4A79B3211688C700517FDD /* Extensions */,
 				CF4A79B2211688BF00517FDD /* Stubs */,
@@ -228,6 +231,7 @@
 		BBD3254820E76CE10013208F /* WeatherInfoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				CFCEC3AF2121268C00B350F0 /* WeatherMainView */,
 				BBD3254920E76CE10013208F /* WeatherInfoUITests.swift */,
 				BBD3254B20E76CE10013208F /* Info.plist */,
 			);
@@ -489,14 +493,25 @@
 			children = (
 				CF4A79102114BE7B00517FDD /* SwiftyJSON.framework */,
 				CF936ECF2114BA0800ABD53F /* Alamofire.framework */,
-				CF936ED22114BA0800ABD53F /* Kingfisher.framework */,
-				CF936ED32114BA0900ABD53F /* PMKAlamofire.framework */,
-				CF936ED02114BA0800ABD53F /* PMKCoreLocation.framework */,
-				CF936ED42114BA0900ABD53F /* PromiseKit.framework */,
-				CF936ED12114BA0800ABD53F /* SVProgressHUD.framework */,
-				CF936ED52114BA0900ABD53F /* Timepiece.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCEC3AF2121268C00B350F0 /* WeatherMainView */ = {
+			isa = PBXGroup;
+			children = (
+				CFCEC3B02121271000B350F0 /* RootViewControllerUITests.swift */,
+			);
+			path = WeatherMainView;
+			sourceTree = "<group>";
+		};
+		CFCEC3B221212CC500B350F0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CFCEC3B321212CE800B350F0 /* Nimble.framework */,
+				CFCEC3B421212CE800B350F0 /* Quick.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		CFE77E2C211A1179003E4910 /* Views-UI */ = {
@@ -581,7 +596,7 @@
 		BBD3251E20E76CDC0013208F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Mt Aden LLC";
 				TargetAttributes = {
@@ -722,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCEC3B12121271000B350F0 /* RootViewControllerUITests.swift in Sources */,
 				BBD3254A20E76CE10013208F /* WeatherInfoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -926,7 +942,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,7 +969,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "WeatherInfoTests/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -969,7 +993,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -989,7 +1013,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VP3C5A4R4D;
+				DEVELOPMENT_TEAM = PD5GSVG63T;
 				INFOPLIST_FILE = WeatherInfoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

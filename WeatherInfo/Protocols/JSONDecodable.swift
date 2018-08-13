@@ -95,16 +95,16 @@ struct JSONDecoder {
         var partial = JSONData
         let keys = keyPath.components(separatedBy: ".")
 
-        for i in 0..<keys.count {
-            if i < keys.count - 1 {
-                if let partialJSONData = JSONData[keys[i]] as? JSON {
+        for keyIndex in 0..<keys.count {
+            if keyIndex < keys.count - 1 {
+                if let partialJSONData = JSONData[keys[keyIndex]] as? JSON {
                     partial = partialJSONData
                 } else {
                     throw JSONDecoderError.invalidData
                 }
 
             } else {
-                return try JSONDecoder(JSONData: partial).value(forKey: keys[i])
+                return try JSONDecoder(JSONData: partial).value(forKey: keys[keyIndex])
             }
         }
 
@@ -115,16 +115,16 @@ struct JSONDecoder {
         var partial = JSONData
         let keys = keyPath.components(separatedBy: ".")
 
-        for i in 0..<keys.count {
-            if i < keys.count - 1 {
-                if let partialJSONData = JSONData[keys[i]] as? JSON {
+        for keyIndex in 0..<keys.count {
+            if keyIndex < keys.count - 1 {
+                if let partialJSONData = JSONData[keys[keyIndex]] as? JSON {
                     partial = partialJSONData
                 } else {
                     throw JSONDecoderError.invalidData
                 }
 
             } else {
-                return try JSONDecoder(JSONData: partial).value(forKey: keys[i])
+                return try JSONDecoder(JSONData: partial).value(forKey: keys[keyIndex])
             }
         }
         

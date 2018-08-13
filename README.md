@@ -24,11 +24,12 @@ Alok C
 
 Todo list: <br>
 ☀️ Adding codecov.io   <br>
-⛈ fastlane integration <br>
-⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
+☀️ fastlane integration <br>
+☀️ Add UI Test Target <br>
+⛈ Removing swiftyJSON and using Codable protocol for JSON xxparsing <br>
 ⛈ Adding PromiseKit <br>
 ⛈ Adding Qucik & Nible for Testing<br>
-⛈ Get up to 30% Code coverage <br>
+⛈ Get up to 60% Code coverage <br>
 ⛈ Adding dashboard with multiple cities weather condition <br>
 ⛈ Travel Plan: Weather condition as per your drive plan <br>
 
@@ -58,7 +59,7 @@ Todo list: <br>
 
 
 # Credits:
-🏀 [Marina Matijaca](https://dribbble.com/Marina_Matijaca): For amazing [backgeround images](https://dribbble.com/shots/2227157-Free-iPhone-Backgrounds)
+🏀 [Marina Matijaca](https://dribbble.com/Marina_Matijaca): For amazing [background images](https://dribbble.com/shots/2227157-Free-iPhone-Backgrounds)
 <br>
 💎 Weather icons from [sketchapp.com](https://www.sketchappsources.com/free-source/1842-extensive-weather-icons-pack-sketch-freebie-reosource.html)
 <br><br>
