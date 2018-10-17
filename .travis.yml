@@ -71,7 +71,7 @@ script:
     #- scripts/intelligent-bootstrap
     - carthage update --platform ios
     - set -o pipefail
-    - fastlane scan -s WeatherInfo
+   # - fastlane scan -s WeatherInfo
     #If have workaspace, used -workspace option instead -project 
     #- xcodebuild test -enableCodeCoverage YES -project WeatherInfo.xcodeproj -scheme WeatherInfo -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
     #- xcodebuild -scheme WeatherInfo -project WeatherInfo.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test | xcpretty 
