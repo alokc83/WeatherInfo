@@ -3,6 +3,7 @@
 Master Branch Build status:<br>
 ![Master branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=master)
 [![codecov](https://codecov.io/gh/alokc83/WeatherInfo/branch/master/graph/badge.svg)](https://codecov.io/gh/alokc83/WeatherInfo)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo?ref=badge_shield)
 <br>
 Develop branch build status:<br>
 ![Develop branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=develop)
@@ -74,3 +75,6 @@ Todo list: <br>
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/alokc83/WeatherInfo.svg)](https://GitHub.com/alokc83/WeatherInfo/pull/)
 [![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/alokc83/WeatherInfo.svg)](https://GitHub.com/alokc83/WeatherInfo/pull/) 
 -->
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo?ref=badge_large)
