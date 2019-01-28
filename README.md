@@ -30,7 +30,7 @@ Todo list: <br>
 ⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
 ⛈ Adding PromiseKit <br>
 ⛈ Adding Qucik & Nible for Testing<br>
-⛈ Get up to 30% Code coverage <br>
+⛈ Get up to 80% Code coverage <br>
 ⛈ Adding dashboard with multiple cities weather condition <br>
 ⛈ Travel Plan: Weather condition as per your drive plan <br>
 
