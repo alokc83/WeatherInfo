@@ -123,7 +123,7 @@ extension LocationsViewController: UITableViewDataSource {
         case .current:
             return 1
         case .favorite:
-            return max(favorites.count, 1)
+            return max(favorites.count, 0)
         }
     }
 
@@ -156,7 +156,7 @@ extension LocationsViewController: UITableViewDataSource {
                 viewModel = LocationsViewLocationViewModel(location: favorite.location, locationAsString: favorite.name)
             } else {
                 // Configure Table View Cell
-                cell.mainLabel.text = "No Favorites Found"
+                cell.mainLabel.text = "No Favorites"
             }
         }
 
