@@ -129,6 +129,9 @@ extension LocationsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         guard let section = Section(rawValue: section) else { fatalError("Unexpected Section") }
+        if favorites.isEmpty {
+            return "No Favourites Added"
+        }
         return section.title
     }
 
@@ -156,7 +159,7 @@ extension LocationsViewController: UITableViewDataSource {
                 viewModel = LocationsViewLocationViewModel(location: favorite.location, locationAsString: favorite.name)
             } else {
                 // Configure Table View Cell
-                cell.mainLabel.text = "No Favorites"
+                cell.mainLabel.text = "No Favorites Added"
             }
         }
 
@@ -188,6 +191,7 @@ extension LocationsViewController: UITableViewDataSource {
 
         // Update Table View
         tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.reloadData()
     }
 
 }
