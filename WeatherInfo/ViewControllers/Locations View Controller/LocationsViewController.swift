@@ -223,16 +223,19 @@ extension LocationsViewController: UITableViewDelegate {
 }
 
 extension LocationsViewController: AddLocationViewControllerDelegate {
-
+    
     func controller(_ controller: AddLocationViewController, didAddLocation location: Location) {
-        // Update User Defaults
-        UserDefaults.addLocation(location)
-
-        // Update Locations
-        favorites.append(location)
-
-        // Update Table View
-        tableView.reloadData()
+        // Add only if not already added
+        if !(favorites.contains(location)) {
+            // Update User Defaults
+            UserDefaults.addLocation(location)
+            
+            // Update Locations
+            favorites.append(location)
+            
+            // Update Table View
+            tableView.reloadData()
+        }
     }
-
+    
 }
