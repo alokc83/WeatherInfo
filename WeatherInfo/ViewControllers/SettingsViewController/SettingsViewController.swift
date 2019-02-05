@@ -126,7 +126,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let section = Section(rawValue: section) else { fatalError("Unexpected Section") }
+        guard let section = Section(rawValue: section) else { return "" }
         return section.title
     }
     
