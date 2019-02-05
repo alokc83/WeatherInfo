@@ -128,9 +128,11 @@ extension LocationsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let section = Section(rawValue: section) else { fatalError("Unexpected Section") }
-        if favorites.isEmpty && section == .favorite {
+        guard let section = Section(rawValue: section) else { return "" }
+        if section == .favorite && favorites.isEmpty {
             return "No Favorites Added"
+        } else if section == .current {
+            return "Current Location"
         }
         return section.title
     }
