@@ -38,18 +38,15 @@ class AddLocationViewController: UIViewController {
         viewModel.locationsDidChange = { [unowned self] (locations) in
             self.tableView.reloadData()
         }
-        self.activityIndicatorView.isHidden = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        viewModel.queryinhDidChange = { [unowned self] (querying) in
+        viewModel.queryingDidChange = { [unowned self] (querying) in
             if querying {
-                self.activityIndicatorView.isHidden = false
                 self.activityIndicatorView.startAnimating()
             } else {
-                self.activityIndicatorView.isHidden = true
                 self.activityIndicatorView.stopAnimating()
             }
         }

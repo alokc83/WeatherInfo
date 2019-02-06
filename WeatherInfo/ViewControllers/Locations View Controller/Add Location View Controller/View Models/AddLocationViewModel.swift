@@ -17,7 +17,7 @@ class AddLocationViewModel {
     }
     private var querying = false {
         didSet {
-            queryinhDidChange?(querying)
+            queryingDidChange?(querying)
         }
     }
     private var locations: [Location] = [] {
@@ -31,7 +31,7 @@ class AddLocationViewModel {
     private lazy var geocoder = CLGeocoder()
     //private let gcoder: LocationService
     
-    var queryinhDidChange: ((Bool) -> Void)?
+    var queryingDidChange: ((Bool) -> Void)?
     var locationsDidChange: (([Location]) -> Void)?
     
     func locations(at index: Int) -> Location? {
