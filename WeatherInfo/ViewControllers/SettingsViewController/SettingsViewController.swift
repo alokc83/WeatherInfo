@@ -63,6 +63,14 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
             return 2
         }
 
+        var title: String {
+            switch self {
+            case .time: return " Time:"
+            case .units: return " Speed:"
+            case .temperature: return " Temprature: "
+            }
+        }
+        
         static var count: Int {
             return (Section.temperature.rawValue + 1)
         }
@@ -117,6 +125,11 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let section = Section(rawValue: section) else { return "" }
+        return section.title
+    }
+    
     // MARK: - Table View Delegate Methods
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
