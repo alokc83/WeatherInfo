@@ -47,6 +47,7 @@ Todo list: <br>
 ### App Screenshots
 ---------------------------
 ![Launch screen](https://github.com/alokc83/WeatherInfo/blob/master/AppScreenshots/LaunchScreen.png?raw=true|width=200)
+![Build States](https://buildstats.info/travisci/chart/alokc83/WeatherInfo?branch=master)
 
 #### Upper section backgorunds
 ------------------------------------
