@@ -12,6 +12,7 @@
 		5182325471A9E35F21140D28 /* Pods_WeatherInfoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B222A8FC0821FEA87DF9F /* Pods_WeatherInfoUITests.framework */; };
 		BBD0C34022B8A72C00C4AB8D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = BBD0C33E22B8A72C00C4AB8D /* Cartfile */; };
 		BBD0C34122B8A72C00C4AB8D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BBD0C33F22B8A72C00C4AB8D /* Podfile */; };
+		BBD0C34D22B9491700C4AB8D /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD0C34C22B9491700C4AB8D /* AppConfiguration.swift */; };
 		BBD3252A20E76CDD0013208F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3252920E76CDD0013208F /* AppDelegate.swift */; };
 		BBD3252F20E76CDD0013208F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD3252D20E76CDD0013208F /* Main.storyboard */; };
 		BBD3253120E76CE10013208F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD3253020E76CE10013208F /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		B88C5CE844A8D6063443C629 /* Pods-WeatherInfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherInfoTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherInfoTests/Pods-WeatherInfoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBD0C33E22B8A72C00C4AB8D /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		BBD0C33F22B8A72C00C4AB8D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		BBD0C34C22B9491700C4AB8D /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		BBD3252620E76CDD0013208F /* WeatherInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD3252920E76CDD0013208F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBD3252E20E76CDD0013208F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,6 +193,14 @@
 			path = "supporting files";
 			sourceTree = "<group>";
 		};
+		BBD0C34B22B948E600C4AB8D /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BBD0C34C22B9491700C4AB8D /* AppConfiguration.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
 		BBD3251D20E76CDC0013208F = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		BBD3252820E76CDD0013208F /* WeatherInfo */ = {
 			isa = PBXGroup;
 			children = (
+				BBD0C34B22B948E600C4AB8D /* AppSettings */,
 				CF4A79232114BFD200517FDD /* AppInit */,
 				CFE77E2C211A1179003E4910 /* Views-UI */,
 				CF4A79C32118F63700517FDD /* Services */,
@@ -638,11 +649,12 @@
 					};
 					BBD3253920E76CE10013208F = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 						TestTargetID = BBD3252520E76CDD0013208F;
 					};
 					BBD3254420E76CE10013208F = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = BBD3252520E76CDD0013208F;
 					};
 				};
@@ -817,6 +829,7 @@
 				CF4A799E2115E62C00517FDD /* DataManager.swift in Sources */,
 				CF4A798321150DC700517FDD /* JSONDecodable.swift in Sources */,
 				CF4A799221150E9100517FDD /* LocationsViewController.swift in Sources */,
+				BBD0C34D22B9491700C4AB8D /* AppConfiguration.swift in Sources */,
 				CF4A799521150E9100517FDD /* AddLocationViewController.swift in Sources */,
 				BBD3252A20E76CDD0013208F /* AppDelegate.swift in Sources */,
 				CF4A79422114D34A00517FDD /* UIImage+Extension.swift in Sources */,
@@ -1070,7 +1083,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtaden.edu.ios.WeatherInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherInfo.app/WeatherInfo";
 			};
@@ -1097,7 +1110,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtaden.edu.ios.WeatherInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherInfo.app/WeatherInfo";
 			};
@@ -1118,7 +1131,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtaden.edu.ios.WeatherInfoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WeatherInfo;
 			};
@@ -1139,7 +1152,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mtaden.edu.ios.WeatherInfoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = WeatherInfo;
 			};
