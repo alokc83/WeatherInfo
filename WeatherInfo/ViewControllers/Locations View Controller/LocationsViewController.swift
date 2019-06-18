@@ -84,7 +84,6 @@ class LocationsViewController: UIViewController {
 extension LocationsViewController: UITableViewDataSource {
 
     private enum Section: Int {
-
         case current
         case favorite
 
@@ -123,7 +122,7 @@ extension LocationsViewController: UITableViewDataSource {
         case .current:
             return 1
         case .favorite:
-            return max(favorites.count, 1)
+            return max(favorites.count, 0)
         }
     }
 

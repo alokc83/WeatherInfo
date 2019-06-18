@@ -33,6 +33,8 @@ Todo list: <br>
 ⛈ Adding dashboard with multiple cities weather condition <br>
 ⛈ Travel Plan: Weather condition as per your drive plan <br>
 
+![Build States](https://buildstats.info/travisci/chart/alokc83/WeatherInfo?branch=master)
+
 ### Code Covrage Grid
 ---------------------------
 ![CodeCov Groid](https://codecov.io/gh/alokc83/WeatherInfo/branch/more-travis-codecov-configuration/graphs/tree.svg)
@@ -45,7 +47,6 @@ Todo list: <br>
 ### App Screenshots
 ---------------------------
 ![Launch screen](https://github.com/alokc83/WeatherInfo/blob/master/AppScreenshots/LaunchScreen.png?raw=true|width=200)
-![Build States](https://buildstats.info/travisci/chart/alokc83/WeatherInfo?branch=master)
 
 #### Upper section backgorunds
 ------------------------------------
