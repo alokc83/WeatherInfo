@@ -33,7 +33,6 @@ extension LocationsViewLocationViewModel: LocationRepresentable {
         } else if let location = location {
             return location.asString
         }
-
         return "Unknown Location"
     }
 

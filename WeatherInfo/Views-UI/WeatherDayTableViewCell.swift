@@ -10,11 +10,7 @@ import UIKit
 
 class WeatherDayTableViewCell: UITableViewCell {
 
-    // MARK: - Type Properties
-
     static let reuseIdentifier = "WeatherDayCell"
-
-    // MARK: - Properties
 
     @IBOutlet var dayLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
