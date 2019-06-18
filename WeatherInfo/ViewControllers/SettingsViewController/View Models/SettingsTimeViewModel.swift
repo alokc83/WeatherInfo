@@ -19,7 +19,7 @@ struct SettingsTimeViewModel {
         }
     }
     
-    var accessoryType: UITableViewCellAccessoryType {
+    var accessoryType: UITableViewCell.AccessoryType {
         if UserDefaults.timeNotation() == timeNotation {
             return .checkmark
         } else {

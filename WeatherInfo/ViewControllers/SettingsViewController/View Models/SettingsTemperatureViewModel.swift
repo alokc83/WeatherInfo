@@ -18,7 +18,7 @@ struct SettingsTemperatureViewModel {
         }
     }
     
-    var accessoryType: UITableViewCellAccessoryType {
+    var accessoryType: UITableViewCell.AccessoryType {
         if UserDefaults.temperatureNotation() == temperatureNotation {
             return .checkmark
         } else {

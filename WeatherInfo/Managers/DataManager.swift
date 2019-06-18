@@ -47,7 +47,7 @@ final class DataManager {
     // MARK: - Helper Methods
 
     private func didFetchWeatherData(data: Data?, response: URLResponse?, error: Error?, completion: WeatherDataCompletion) {
-        if let _ = error {
+        if error != nil {
             completion(nil, .failedRequest)
 
         } else if let data = data, let response = response as? HTTPURLResponse {
