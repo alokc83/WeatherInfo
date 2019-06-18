@@ -3,7 +3,6 @@
 Master Branch Build status:<br>
 ![Master branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=master)
 [![codecov](https://codecov.io/gh/alokc83/WeatherInfo/branch/master/graph/badge.svg)](https://codecov.io/gh/alokc83/WeatherInfo)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo?ref=badge_shield)
 <br>
 Develop branch build status:<br>
 ![Develop branch status](https://travis-ci.org/alokc83/WeatherInfo.svg?branch=develop)
@@ -24,13 +23,13 @@ Thanks,
 Alok C
 
 Todo list: <br>
-☀️ Adding codecov.io  <br>
+☀️ Adding codecov.io   <br>
 ☀️ fastlane integration <br>
 ☀️ Add UI Test Target <br>
-⛈ Removing swiftyJSON and using Codable protocol for parsing <br>
+⛈ Removing swiftyJSON and using Codable protocol for JSON xxparsing <br>
 ⛈ Adding PromiseKit <br>
-⛈ Adding Qucik & Nible for Testing<br>
-⛈ Get up to 80% Code coverage <br>
+☀️ Adding Qucik & Nible for Testing<br>
+⛈ Get up to 60% Code coverage <br>
 ⛈ Adding dashboard with multiple cities weather condition <br>
 ⛈ Travel Plan: Weather condition as per your drive plan <br>
 
@@ -46,6 +45,7 @@ Todo list: <br>
 ### App Screenshots
 ---------------------------
 ![Launch screen](https://github.com/alokc83/WeatherInfo/blob/master/AppScreenshots/LaunchScreen.png?raw=true|width=200)
+![Build States](https://buildstats.info/travisci/chart/alokc83/WeatherInfo?branch=master)
 
 #### Upper section backgorunds
 ------------------------------------
@@ -60,7 +60,7 @@ Todo list: <br>
 
 
 # Credits:
-🏀 [Marina Matijaca](https://dribbble.com/Marina_Matijaca): For amazing [backgeround images](https://dribbble.com/shots/2227157-Free-iPhone-Backgrounds)
+🏀 [Marina Matijaca](https://dribbble.com/Marina_Matijaca): For amazing [background images](https://dribbble.com/shots/2227157-Free-iPhone-Backgrounds)
 <br>
 💎 Weather icons from [sketchapp.com](https://www.sketchappsources.com/free-source/1842-extensive-weather-icons-pack-sketch-freebie-reosource.html)
 <br><br>
@@ -75,6 +75,3 @@ Todo list: <br>
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/alokc83/WeatherInfo.svg)](https://GitHub.com/alokc83/WeatherInfo/pull/)
 [![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/alokc83/WeatherInfo.svg)](https://GitHub.com/alokc83/WeatherInfo/pull/) 
 -->
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Falokc83%2FWeatherInfo?ref=badge_large)

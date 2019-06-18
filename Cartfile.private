@@ -1,0 +1,3 @@
+# Test Libs
+github "Quick/Quick"
+github "Quick/Nimble"
