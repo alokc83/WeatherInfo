@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='WeatherInfoTests.xctest' tests='18' failures='0'>
+  <testsuite name='WeatherInfoTests.SettingsTemperatureViewModelTests' tests='6' failures='0'>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testAccessoryType_Celsius_Celsius' time='0.008'/>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testAccessoryType_Celsius_Fahrenheit' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testAccessoryType_Fahrenheit_Celsius' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testAccessoryType_Fahrenheit_Fahrenheit' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testText_Celsius' time='0.004'/>
+    <testcase classname='WeatherInfoTests.SettingsTemperatureViewModelTests' name='testText_Fahrenheit' time='0.001'/>
+  </testsuite>
+  <testsuite name='WeatherInfoTests.SettingsTimeViewModelTests' tests='6' failures='0'>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testAccessoryType_TwelveHour_TwelveHour' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testAccessoryType_TwelveHour_TwentyFourHour' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testAccessoryType_TwentyFourHour_TwelveHour' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testAccessoryType_TwentyFourHour_TwentyFourHour' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testText_TwelveHour' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsTimeViewModelTests' name='testText_TwentyHour' time='0.001'/>
+  </testsuite>
+  <testsuite name='WeatherInfoTests.SettingsUnitsViewModelTests' tests='6' failures='0'>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testAccessoryType_Imperial_Imperial' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testAccessoryType_Imperial_Metric' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testAccessoryType_Metric_Imperial' time='0.002'/>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testAccessoryType_Metric_Metric' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testTest_Imperial' time='0.001'/>
+    <testcase classname='WeatherInfoTests.SettingsUnitsViewModelTests' name='testTest_Metric' time='0.001'/>
+  </testsuite>
+</testsuites>

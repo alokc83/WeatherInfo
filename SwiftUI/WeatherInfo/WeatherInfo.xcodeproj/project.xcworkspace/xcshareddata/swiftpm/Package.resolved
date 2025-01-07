@@ -1,0 +1,15 @@
+{
+  "originHash" : "0b7a4800df096c2cc444cbf5e1db2ed1ebe8408faad86228bbd48e6c27cc0725",
+  "pins" : [
+    {
+      "identity" : "swiftynet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alokc83/SwiftyNet",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b99145370a1035648cbe6893f75ac2f107009bbc"
+      }
+    }
+  ],
+  "version" : 3
+}
